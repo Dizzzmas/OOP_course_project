@@ -39,7 +39,6 @@ def configure_class(app: App) -> None:
     app.config.from_object(config_class)
 
 
-
 def configure_instance(app: App) -> None:
     """Loda instance.cfg if it exists as our local instance configuration override"""
     app.config.from_pyfile("instance.cfg", silent=True)
